@@ -1,6 +1,6 @@
 package models
 
-import "github.com/claudiocanellas76/db"
+import "github.com/AEVP/db"
 
 type Atleta struct {
 	Id   int
