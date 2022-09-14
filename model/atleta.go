@@ -1,5 +1,7 @@
 package models
 
+import "github.com/claudiocanellas76/db"
+
 type Atleta struct {
 	Id   int
 	Nome string
@@ -7,7 +9,7 @@ type Atleta struct {
 
 func getAtletas() []Atleta {
 
-	db := ConectaBd()
+	db := db.ConectaBd()
 	getAtleta, err := db.Query("select * from atleta")
 	if err != nil {
 		panic(err.Error())
