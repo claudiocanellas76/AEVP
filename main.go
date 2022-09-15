@@ -3,9 +3,8 @@ package main
 import (	
 	"html/template"
 	"net/http"
+	"https://github.com/AEVP/models"
 )
-
-import "https://github.com/claudiocanellas76/AEVP/models"
 
 var temp = template.Must(template.ParseGlob("templates/*.html"))
 
@@ -16,7 +15,6 @@ func main() {
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
-
 	todosAtletas := models.getAtletas()
 	temp.ExecuteTemplate(w, "Index", todosAtletas)
 }
