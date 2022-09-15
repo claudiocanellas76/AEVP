@@ -3,7 +3,6 @@ package main
 import (
 	"html/template"
 	"net/http"
-	"github.com/AEVP/db"
 )
 
 var temp = template.Must(template.ParseGlob("templates/*.html"))
@@ -15,8 +14,8 @@ func main() {
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
-    
+
 	todos := model.
-	temp.ExecuteTemplate(w, "Index", as)
+		temp.ExecuteTemplate(w, "Index", as)
 
 }

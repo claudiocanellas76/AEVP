@@ -1,7 +1,5 @@
 package models
 
-import "github.com/AEVP/db"
-
 type Atleta struct {
 	Id   int
 	Nome string
@@ -33,8 +31,8 @@ func getAtletas() []Atleta {
 		as = append(as, a)
 
 	}
-
-	temp.ExecuteTemplate(w, "Index", as)
+	t :=
+		temp.ExecuteTemplate(w, "Index", as)
 	defer db.Close()
 
 }
