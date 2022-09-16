@@ -1,13 +1,13 @@
 package models
 
-import "github.com/AEVP/db"
+import "aevp/db"
 
 type Atleta struct {
 	Id   int
 	Nome string
 }
 
-func getAtletas() []Atleta {
+func GetAtletas() []Atleta {
 
 	db := db.ConectaBd
 	getAtleta, err := db.Query("select * from atleta")
