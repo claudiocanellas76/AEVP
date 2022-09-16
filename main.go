@@ -1,9 +1,10 @@
 package main
 
-import (	
+import (
 	"html/template"
 	"net/http"
-	"https://github.com/AEVP/models"
+
+	"github.com/AEVP/models"
 )
 
 var temp = template.Must(template.ParseGlob("templates/*.html"))
