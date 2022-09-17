@@ -1,9 +1,10 @@
 package main
 
 import (
-	"aevp/models"
 	"html/template"
 	"net/http"
+
+	"github.com/claudiocanellas76/aevp/models"
 )
 
 var temp = template.Must(template.ParseGlob("templates/*.html"))
