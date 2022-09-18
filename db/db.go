@@ -2,6 +2,11 @@ package db
 
 import (
 	"database/sql"
+<<<<<<< HEAD
+=======
+
+	"github.com/lib/pq"
+>>>>>>> cb12aa2672af6231fa7efab9f769730f62dd2c81
 )
 
 func ConectaBd() *sql.DB {
